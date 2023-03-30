@@ -24,6 +24,9 @@ dependencies {
 	
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.0'
 	//compile files('mysql-connector-j-8.0.32.jar')
+	//compile fileTree(dir: 'libs', include: ['*.jar'])
+	//compile files('libs/mysql-connector-j-8.0.32.jar')
+	implementation files("libs/mysql-connector-j-8.0.32.jar")
 	
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
